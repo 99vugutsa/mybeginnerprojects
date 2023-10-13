@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+.head
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.move-icon
+{
+    height: 50px;
+    
+}
+.move-button
+{
+    border-radius: 50%;
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 60%;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 20px;
+    cursor: pointer;
+    border-color: whitesmoke;
+}
+.reset
+{
+    padding: 15px;
+    background-color: whitesmoke;
+    font-size: medium;
+    border: none;
+}
+.result{
+    font-size: 25px;
+    font-weight: bold;
+}

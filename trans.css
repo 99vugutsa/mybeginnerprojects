@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{ 
+    background-color: rgb(0, 24, 8);
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+li {
+    display: inline-block;
+}
+ul{
+    text-align: end;
+    background-color: black;
+    padding: 30px;
+}
+li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition-property: border-style , border-color, border-radius;
+    transition-duration: 1s; 
+}
+li a:hover{
+    border-style: solid;
+    border-color: olive;
+    border-radius: 30px;
+}
+.hero{
+    background-image: url(img/intimate4.jpeg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.hero h1{
+    color: white;
+    font-size: 70px;
+    padding-top: -20px;
+    text-align: center;
+    position: relative;
+    padding-top: 200px;
+    animation-name: hero;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.hero p{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@keyframes hero{
+    0%{
+        top: -600px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.hero p{
+    color: white;
+    line-height: 1.8;
+    position: relative;
+    animation-name: word;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes word{
+    0%{
+        left: -1500px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.about h1{
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    font-size: 80px;
+    padding-bottom: 60px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 22, 7);
+    padding: 70px;
+    flex-wrap: wrap;
+}
+.boxes p{
+    color: white;
+    line-height: 1.9;
+    font-weight: 300;
+}
+.boxX{
+    width: 30%;
+    margin: 25px 0px 25px 0px;
+}
+
+.serv h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    padding: 70px;  
+}
+.aboutimg{
+    object-fit: cover;
+height: 50vh;
+width: 70vh;
+padding-left: 120px;
+padding-right: 40px;
+}
+
+.wrapper{
+    display: flex;
+    margin-bottom: 90px;
+}
+.text{
+    color: white;
+    font-weight: 300;
+    padding-top: 100px;
+    width: 45%;
+    line-height: 1.8;
+}
+.paint{
+    color: white;
+    padding-left: 120px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+.btn{
+    border-style: solid;
+    border-radius: 7px;
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+  
+}
+
+
+
+.btn a{
+    text-decoration: none;
+    color: rgb(0, 24, 8);
+    font-weight: 600; 
+    letter-spacing: 1.5px;
+   
+}
+
+
+.foot{
+    background-color: rgb(0, 20, 7);
+    height: 30vh;
+}
+
+.quickies{
+    display: flex;
+    justify-content: space-around;
+}
+.quick1{
+    color: white;
+}
+.quick1 h4{
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+.quick1 p{
+    line-height: 1.8;
+    font-weight: 300;
+}
+.end{
+    background-color: black;
+}
+.end h6{
+    color: bisque;
+    text-align: center;
+    font-weight: 300;
+}
+@media (max-width: 810px){
+    *{
+        overflow-x: hidden;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .boxX {
+        width: 100%;
+      }
+      .about h1{
+        font-size: 65px;
+      }
+      .serv h1{
+        font-size: 65px;
+        justify-content: center;
+        display: flex;
+      }
+      .wrapper{
+        flex-direction: column;
+      }
+      
+      
+     .aboutimg{
+        object-fit: cover;
+       width: 40vh;
+       padding-left: 30px;
+       padding-right: 40px;
+       height: 30vh;
+     }
+     .paint {
+            color: white;
+            padding-left: 60px;
+            margin-bottom: 35px;
+            font-size: 20px;
+          }
+          .text {
+            padding-top: 60px;
+            width: 90%;
+            padding-left: 15px;
+            padding-right: 10px;
+            text-align: center;
+          }
+          .quickies{
+            flex-direction: column;
+          }
+          .quick1{
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+          }
+          .end{
+            margin-top :300px;
+          }
+          .foot{
+            height: 70vh;
+          }
+          li a{
+            font-size: 15px;
+            padding: 10px;
+          }
+      }
+

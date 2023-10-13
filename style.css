@@ -1,0 +1,123 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Segoe UI';
+    overflow: scroll;
+    overflow-x: hidden;
+    font-weight: 300;  
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    border: 0px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: end;
+}
+li{
+    display: inline;
+}
+li a{
+    display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.header{
+    position: sticky;
+    background-image:url(img/beachsky.jpeg.jpeg) ;
+    transition: 3s;
+    color: white;
+    width: 100%;
+    background-repeat:repeat-x;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    height:100px ;
+    font-size: 25px;
+    margin-bottom: 20px;
+    }
+    .offset{
+        margin: 20px;
+        margin-bottom: 20px;
+        text-align:center ;
+        font-size: 20px;
+    }
+    .list{
+        position: static;
+    }
+    .gallery{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        flex-wrap: wrap;
+    
+    }
+    .image{
+        margin: 20px;
+        height: 480px;
+        width: 350px; 
+
+     }
+    .intro{
+        font-size: 25px;
+        margin: 50px;
+        padding: 20px;
+        line-height: 1.8;
+        margin-left: 85px;
+        display: grid;
+        place-items: center;
+    
+    }
+     .msa{
+        margin: 20px;
+        margin-bottom: 20px;
+        text-align:center ;
+        font-size: 65px;
+        color: gray;
+     }
+     .town{
+        color: black;
+        font-size: 40px;
+        margin: 20px;
+        margin-left: 250px;
+        margin-top: 70px;
+     }
+     img{
+        max-width: 700px;
+        margin-top: 0px;
+        
+     }
+     .wrapper{
+        margin-left: 250px;
+        margin-top: 70px;
+        display: flex;
+     }
+     .textbox{
+        padding: 100px;
+        font-size: 25px;
+     }
+     footer{
+        background-color: black;
+        opacity: 1;
+        padding: 40px;
+        margin-top: 50px;
+        color: white;
+     }
+     .footercontent{
+        display: grid;
+        place-items: center;
+     }
+     .footercontent h3{
+        margin-top: 20px;
+        font-size: 40px;
+     }
+     .footercontent p{
+        margin: 20px;
+     }
+     
